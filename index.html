@@ -1,0 +1,47 @@
+< div class = "" >
+
+        < div class = "" >
+            < h1 > Générateur de playlists Spotify Top Track < / h1 >
+        < / div >
+        < div class = "" >
+            < Br / >
+            < form action = "/ go" method = "post" >
+
+
+                    < h3 > Quelle plage de temps aimeriez-vous utiliser? < / h3 >
+                    < Br / >
+                    < h4 >
+
+                            < input type = "radio" name = "time_range" id = "inlineCheckbox1" value = "short_term" vérifié> Dernières semaines
+                            < Br / >
+                            < input type = "radio" name = "time_range" id = "inlineCheckbox2" value = "medium_term" > Les derniers mois
+                            < Br / >
+                            < input type = "radio" name = "time_range" id = "inlineCheckbox3" value = "long_term" > Dernières années
+
+                    < / h4 >
+                    < Br / >
+                    < h3 > Combien de pistes voulez-vous? < / h3 >
+                    < h4 >
+                        < input type = "range" min = "3" max = "15" value = "5" name = "num_tracks" step = "1" onchange = "showValue (this.value)" / >
+                        < span id = "range" > 5 < / span >
+                    < / h4 >
+                        < script type = "text / javascript" >
+                        fonction showValue (newValue)
+                        {
+                            document.getElementById ("range"). innerHTML = newValue;
+                        }
+                        < / script >
+
+                < Br / >
+                < div class = "" >
+
+                    < centre >
+                        < button type = "submit" class = "btn btn-danger spotify_button" id = "" style = "" > < h4 > < i class = "fab fa-spotify" > < / i > Créer ma liste de lecture < / h4 > < / bouton >
+                    < / centre >
+                < / div >
+
+            < / formulaire >
+
+    < / div >
+
+< / div >
