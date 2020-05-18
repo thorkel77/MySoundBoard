@@ -1,0 +1,52 @@
+body {
+	background-image:url('images/image.jp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: purple;
+}
+h1{
+    text-align: center;
+}
+h2{
+    display: inline;
+}
+
+header nav{
+	height: 100px;
+    background-color: rgb(7, 6, 6);
+
+}
+
+header nav ul{
+
+    height: 100%;
+    display: flex;
+	justify-content: center;
+
+}
+header nav ul li {
+	display: inline-block;
+	height: 100%;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: white;
+}
+
+
+
+header nav ul li a{
+	height: 100%;
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.5em;
+
+}
+
+header nav ul li a:hover {
+	background-color: black;
+	transition: background-color 2s linear;
+}
